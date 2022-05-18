@@ -1,7 +1,7 @@
 # CALCULADORA API
 
-Este repositorio contem o digo do API calculadora. 
+Este repositorio contem o digo do API calculadora. Disciplina GQSO, ano 2022. 
 
-autores/as:
+Autores/as:
 * Maria Luiza
-* Rityelle Marques eita
+* Rityelle Marques
