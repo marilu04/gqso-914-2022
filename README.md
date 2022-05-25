@@ -1,8 +1,8 @@
-#CALCULADORA API
+# CALCULADORA API
 
 Este repositorio contem o codigo do API calculadora. Disciplina GQSO, ano 2022.
 
 Autores/as:
 
-*Maria Luiza
-*Rityelle Marques
+* Maria Luiza
+* Rityelle Marques
