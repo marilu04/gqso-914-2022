@@ -15,8 +15,8 @@ public class Subtracao implements HttpHandler {
             String[] partes = exchange.getRequestURI().getPath().split("/");
             float n1 = Float.parseFloat(partes[2]);
             float n2 = Float.parseFloat(partes[3]);
-            float subtracao = n1-n2;
-            byte[] resposta = Float.toString(subtracao).getBytes();
+            float total = n1-n2;
+            byte[] resposta = Float.toString(total).getBytes();
 
             exchange.sendResponseHeaders(HTTP_OK, resposta.length);
 
