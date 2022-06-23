@@ -16,6 +16,7 @@ public class Servidor {
         servidor.setExecutor(Executors.newSingleThreadExecutor());
 
         servidor.createContext("/adicao", new Adicao());
+        servidor.createContext("/subtracao", new Subtracao());
         
         servidor.start();
 
