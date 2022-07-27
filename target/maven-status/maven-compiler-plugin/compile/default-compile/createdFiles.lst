@@ -1,8 +1,6 @@
 META-INF/services/io.jooby.MvcFactory
-com/danielfireman/ifal/calcapi/SomaMultiplos$Module.class
 com/danielfireman/ifal/calcapi/Soma.class
 com/danielfireman/ifal/calcapi/Index$Module.class
 com/danielfireman/ifal/calcapi/Soma$Module.class
 com/danielfireman/ifal/calcapi/App.class
 com/danielfireman/ifal/calcapi/Index.class
-com/danielfireman/ifal/calcapi/SomaMultiplos.class
