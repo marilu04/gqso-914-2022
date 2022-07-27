@@ -1,11 +1,12 @@
-# CALCULADORA API
+# api
 
-Este repositorio contem o codigo do API calculadora. Disciplina GQSO, ano 2022.
+Welcome to api!!
 
-Autores/as:
+## running
 
-* Maria Luiza
-* Rityelle Marques
+    mvn clean jooby:run
 
-Testar ramos!!!!!!!!
-Testar ramos 2!!!
+## building
+
+    mvn clean package
+
