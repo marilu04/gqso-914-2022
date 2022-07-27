@@ -3,13 +3,13 @@ package com.danielfireman.ifal.calcapi;
 import io.jooby.annotations.*;
 import io.jooby.exception.BadRequestException;
 
-@Path("/raiz/{op}")
-public class Raiz {
+@Path("/soma/{op}/{op2}")
+public class Soma {
 
     @GET
-    public double calculaRaiz(@PathParam String op) {
+    public double calculaSoma(@PathParam double op, @PathParam double op2) {
         try {
-          return Math.sqrt(Float.parseFloat(op));
+          return op+op2;
         } catch (NumberFormatException nfe) {
           throw new BadRequestException("Parâmetro inválido: " + op);
         }

@@ -6,7 +6,7 @@ public class App extends Jooby {
 
   {
     mvc(new Index());
-    mvc(new Raiz());
+    mvc(new Soma());
     mvc(new SomaMultiplos());
   }
 
