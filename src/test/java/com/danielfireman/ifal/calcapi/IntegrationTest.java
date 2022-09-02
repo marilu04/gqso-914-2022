@@ -31,7 +31,7 @@ public class IntegrationTest {
   @Test
   public void soma_erro(int serverPort) throws IOException {
     Request req = new Request.Builder()
-        .url("http://localhost:" + serverPort + "/soma/2a/2b")
+        .url("http://localhost:" + serverPort + "/soma/2a/2a")
         .build();
 
     try (Response rsp = client.newCall(req).execute()) {
