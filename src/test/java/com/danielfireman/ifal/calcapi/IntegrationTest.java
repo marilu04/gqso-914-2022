@@ -38,4 +38,27 @@ public class IntegrationTest {
       assertEquals(StatusCode.BAD_REQUEST.value(), rsp.code());
     }
   }
+
+  @Test
+  public void subtracao(int serverPort) throws IOException {
+    Request req = new Request.Builder()
+        .url("http://localhost:" + serverPort + "/subtracao/25/25")
+        .build();
+
+    try (Response rsp = client.newCall(req).execute()) {
+      assertEquals("0.0", rsp.body().string());
+      assertEquals(StatusCode.OK.value(), rsp.code());
+    }
+  }
+
+  @Test
+  public void subtracao_erro(int serverPort) throws IOException {
+    Request req = new Request.Builder()
+        .url("http://localhost:" + serverPort + "/subtracao/2a/2b")
+        .build();
+
+    try (Response rsp = client.newCall(req).execute()) {
+      assertEquals(StatusCode.BAD_REQUEST.value(), rsp.code());
+    }
+  }
 }
