@@ -17,14 +17,25 @@ public class IntegrationTest {
   static OkHttpClient client = new OkHttpClient();
 
   @Test
-  public void shouldSayHi(int serverPort) throws IOException {
+  public void soma(int serverPort) throws IOException {
     Request req = new Request.Builder()
-        .url("http://localhost:" + serverPort)
+        .url("http://localhost:" + serverPort + "/soma/25/25")
         .build();
 
     try (Response rsp = client.newCall(req).execute()) {
-      assertEquals("Bem-vindo(a) a API calculadora!", rsp.body().string());
+      assertEquals("50.0", rsp.body().string());
       assertEquals(StatusCode.OK.value(), rsp.code());
+    }
+  }
+
+  @Test
+  public void soma_erro(int serverPort) throws IOException {
+    Request req = new Request.Builder()
+        .url("http://localhost:" + serverPort + "/soma/2a/2a")
+        .build();
+
+    try (Response rsp = client.newCall(req).execute()) {
+      assertEquals(StatusCode.BAD_REQUEST.value(), rsp.code());
     }
   }
 }
