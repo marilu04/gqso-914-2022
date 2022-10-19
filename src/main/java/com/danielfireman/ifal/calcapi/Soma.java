@@ -9,7 +9,7 @@ public class Soma {
     @GET
     public double calculaSoma(@PathParam double num, @PathParam double num2) {
         try {
-          return num+num2;
+          return num;
         } catch (NumberFormatException nfe) {
           throw new BadRequestException("Parâmetros inválidos: " + num + " " +num2);
         }
