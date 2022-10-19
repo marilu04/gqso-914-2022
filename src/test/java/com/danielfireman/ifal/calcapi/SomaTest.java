@@ -14,8 +14,8 @@ public class SomaTest {
   @Test
   public void soma() {
     MockRouter router = new MockRouter(new App());
-    router.get("/soma/9/10", rsp -> {
-      assertEquals(19.0, rsp.value());
+    router.get("/soma/10/10", rsp -> {
+      assertEquals(20.0, rsp.value());
       assertEquals(StatusCode.OK, rsp.getStatusCode());
     });
   }
